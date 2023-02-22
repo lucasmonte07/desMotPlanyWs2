@@ -1,0 +1,53 @@
+<div>       
+       <div>
+          
+          <h3>RealTimeProducts</h3>          
+          
+          <div id="vtitle"></div>          
+          <div id="vdescription"></div>
+          <div id="vcode"></div>
+          <div id="vprice"></div>
+          <div id="vstatus"></div>
+          <div id="vstock"></div>  
+          <div id="vcategory"></div>
+          <div id="vthumbnail"></div>          
+          <br>
+          <div id="btnAgreg"></div>          
+          <div id="btnElim"></div>
+          <div id="btnCanc"></div> 
+          <br>            
+                   
+          <div id="muestrotitle"></div>
+          <div id="muestrodescription"></div>
+          <div id="muestrocode"></div>
+          <div id="muestroprice"></div>
+          <div id="muestrostatus"></div>          
+          <div id="muestrostock"></div>
+          <div id="muestrocategory"></div>
+          <div id="muestrothumbnail"></div>
+          
+          <div id="todo"></div>
+
+          <p>
+
+              {{#each productlist}}
+
+                   <div>                         
+                         <p> title: {{this.title}} </p>
+                         <p> description: {{this.description}} </p>
+                         <p> code: {{this.code}} </p>
+                         <p> price: {{this.price}} </p>
+                         <p> status: {{this.status}} </p>
+                         <p> stock: {{this.stock}} </p>
+                         <p> category: {{this.category}} </p>
+                         <p> thumbnail: {{this.thumbnail}} </p>                         
+                         <p> id: {{this.id}} </p>
+                   </div>
+
+              {{/each}}           
+
+           </p>       
+       
+       </div>
+    
+</div>
